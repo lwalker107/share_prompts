@@ -1,3 +1,5 @@
+// Purpose of this file is to be available across all pages and allows better customization
+// Check next.js website for more info
 import { Inter } from 'next/font/google'
 import './globals.css'
 
