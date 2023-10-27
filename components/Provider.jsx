@@ -1,10 +1,15 @@
+// Higher Order Component that we will be using to wrap other components in
+'use client';
+
 import React from 'react'
 
-const Provider = () => {
+import { SessionProvider } from 'next-auth/react'
+
+const Provider = ({ children, session }) => {
   return (
-    <div>
-      
-    </div>
+    <SessionProvider session={session}>
+      {children}
+    </SessionProvider>
   )
 }
 
