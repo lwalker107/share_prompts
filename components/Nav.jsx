@@ -8,7 +8,7 @@ import { signIn, signOut, useSession, getProviders} from 'next-auth/react';
 
 const Nav = () => {
 
-  const isUserLoggedIn = true;
+  const { data: session } = useSession();
 
   const [providers, setProviders ] = useState(null);
   // For mobile dropdown menu
@@ -16,13 +16,13 @@ const Nav = () => {
 
   // Allows us to sign in using google and setAuth
   useEffect(() => {
-    const setProviders = async () => {
+    const setUpProviders = async () => {
       const response = await getProviders();
 
       setProviders(response);
     }
 
-    setProviders();
+    setUpProviders();
   }, [])
 
   return (
@@ -36,8 +36,11 @@ const Nav = () => {
          className="object-contain" />
          <p className="logo_text">Promptopolis</p>
       </Link>
+
+
+
       <div className="sm:flex hidden">
-        {isUserLoggedIn ? (
+        {session?.user ? (
           <div className="flex gap-3 md:gap-5">
             <Link href="/create-prompt" 
             className="black_btn">
@@ -77,7 +80,7 @@ const Nav = () => {
       </div>
 
       <div className="sm:hidden flex relative">
-        {isUserLoggedIn ? (
+        { session?.user ? (
           <div className='flex'>
             <Image 
                 src="/assets/images/logo.svg" 
