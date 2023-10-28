@@ -16,6 +16,7 @@ const Nav = () => {
 
   // Allows us to sign in using google and setAuth
   useEffect(() => {
+    // when working with frameworks, make sure you read the documentation to really understand
     const setUpProviders = async () => {
       const response = await getProviders();
 
@@ -54,7 +55,7 @@ const Nav = () => {
 
             <Link href="/profile">
               <Image 
-                src="/assets/images/logo.svg" 
+                src={session?.user.image} 
                 width={37} 
                 height={37} 
                 className="rounded-full" 
@@ -83,7 +84,7 @@ const Nav = () => {
         { session?.user ? (
           <div className='flex'>
             <Image 
-                src="/assets/images/logo.svg" 
+                src={session?.user.image} 
                 width={37} 
                 height={37} 
                 className="rounded-full" 
