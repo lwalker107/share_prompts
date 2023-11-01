@@ -9,6 +9,7 @@ import Profile from '@components/profile'
 const MyProfile = () => {
     // Lets you use the data in the current session/whoever is logged in
     const { data: session} = useSession();
+    const router = useRouter();
 
     const [posts, setPosts ] = useState([]);
 
@@ -23,12 +24,12 @@ const MyProfile = () => {
         if(session?.user.id)fetchPosts();
       }, [])
 
-    const handleEdit = ()  => {
-
+    const handleEdit = (post)  => {
+        router.push(`/update-prompt?id=${post._id}`)
     }
 
-    const handleDelete = async () => {
-
+    const handleDelete = async (post) => {
+        router.push(``)
     }
   return (
     <Profile 

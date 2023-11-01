@@ -21,7 +21,7 @@ export const GET = async (req, { params }) => {
 
 // PATCH (update)
 export const PATCH = async (req, { params }) => {
-    const { prompt, tag } = await requestAnimationFrame.json();
+    const { prompt, tag } = await req.json();
 
     try {
         // awaiting connection to MongoDB database
