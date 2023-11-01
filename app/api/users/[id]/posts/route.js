@@ -1,7 +1,7 @@
 import { connectToDB } from "@utils/database";
 import Prompt from '@models/prompt';
 
-// API route that gets all the prompts
+// API route that gets all the prompts for a specific user id
 
 export const GET = async (req, {params}) => {
     try {
