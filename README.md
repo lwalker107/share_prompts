@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Landen Promptopolis App
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Getting Started
+## Title
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Landen Promptopolis App
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Table of Contents
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [GitHub](#github)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [How To Contribute](#howtocontribute)
+- [Tests](#tests)
+- [Screenshot](#screenshot)
+- [Link](#link)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## GitHub
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Link](https://www.github.com/lwalker107)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Email
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+landenwalker880@gmail.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Description
+
+Application that allow users to log in with their google accounts and instantly create prompts that 
+can be used for AI applications such as Chatgpt. Once a prompt is created, it will appear on the front page 
+as apart of the feed and you can attach a tag to the prompt so that it is easier to filter through the prompts.
+
+## Installlation 
+
+
+npm i tailwindcss, bcrypt, mongodb, mongoose, next-auth, react-dom, postcss
+
+## Usage
+
+
+
+## License
+
+
+MIT
+
+## How to Contribute
+
+
+You need to know my GitHub username, my email for questions and a working knowledge of Git.
+
+## Tests
+
+
+
+## Screenshot
+
+![screenshot](./assets/homepage_screenshot.PNG)
+
+## Link 
